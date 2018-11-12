@@ -1,0 +1,152 @@
+.jumbotron {
+    background-color: #008080;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.bg-teal {
+	background-color: #008080;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.logo {
+    color: #008080;
+    font-size: 200px;
+}
+
+/*navbar styling*/
+.navbar {
+    margin-bottom: 0;
+    background-color: #008080;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #008080 !important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+/*end of navbar styling*/
+
+/*table styling*/
+.table {
+    width: 50%; 
+    margin-left: 25%; 
+    margin-right: 25%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #008080;
+}
+
+/*loginform styling*/
+#loginForm{
+    position: absolute;
+    width: 200px;
+    top: 75px;
+    left: 1000px;
+}
+
+#loginButton{
+    margin-top: 5px;
+}
+
+#regButton{
+    bottom: 15px
+}
+
+/*button styling*/
+.btn{
+    background-color: #008080;
+    border-color: white;
+    color: white;
+    border-radius: 0px;
+}
+
+#searchButton{
+    margin-left: 5px;
+}
+
+#addExprButton{
+    margin: 5px;
+}
+
+/*current user box when logged in*/
+#currentUser{
+    position: absolute;
+    left: 1000px;
+    top: 75px;
+}
+
+#currUser{
+    font-size: 35px;
+    padding: 5px;
+}
+
+/*fav list styling*/
+#favouritesList{
+    text-align: center;
+}
+
+#thead{
+    text-align: center;
+}
+
+/*styling of explanationfield*/
+#explanationField{
+    width: 50%; 
+    margin-left: 25%; 
+    margin-right: 25%;
+}
+
+#contact{
+    padding: 118px;
+}
+
+#commentLogo{
+    position: sticky;
+    top: 100px;
+    bottom: 100px;
+}
+
+#heartLogo{
+    position: sticky;
+    top: 100px;
+    bottom: 100px;
+}
+
+
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Final Project - Idioma</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a id="refreshButton" class="navbar-brand" href="#">Idioma</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#expression">EXPRESSION-LIST</a></li>
+        <li><a href="#favourites">FAVOURITES</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Welcome to Idioma!</h1> 
+  <p>Your service for learning idiomatic expressions</p>
+
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="text" class="form-control" id="searchExpression" size="50" placeholder="What expression do you want to learn today?">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default" id="searchButton">Search <span class="glyphicon glyphicon-search"></span></button>
+      </div>
+    </div>
+  </form>
+
+  <div id="searchResults"></div>
+
+  <form class="form-inline" id="loginForm">
+    <input type="text" class="form-control" id="usernameForm" size="23" placeholder="Username">
+    <input type="password" class="form-control" id="passwordForm" size="23" placeholder="Password">
+    <div class="input-group-btn">
+      <button type="button" class="btn btn-default btn-block" id="loginButton">Login</button>
+    </div>
+    <br>
+    <div class="input-group-btn">
+      <button type="button" class="btn btn-default btn-block" id="regButton">Register</button>
+    </div>
+  </form>
+
+  <span id="currentUser"></span>
+</div>
+
+<div id="expression" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Expression List</h2>
+      <table class="table" id="alphList">
+        <tr>
+          <th>Expression</th>
+          <th>Explanation</th>
+        </tr>
+      </table>
+      
+    </div>
+    <div id="commentLogo" class="col-sm-4">
+      <span class="glyphicon glyphicon-comment logo"></span>
+    </div>
+  </div>
+</div>
+
+<div id="favourites" class="container-fluid text-center">
+  <br>
+  <div class="row">
+    <div id="heartLogo" class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Favourites</h2>
+
+      <div id="favList">
+        <div id="favs">
+          <h4>Here can you see your favourite expressions (Exclusively for logged in users!)</h4>
+        </div>
+      </div>
+      <div class="input-group-btn">
+          <button type="button" class="btn btn-default" id="favButton">Show your favourites  <span class="glyphicon glyphicon-refresh"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="about" class="container-fluid text-center bg-grey">
+  <h2>About</h2>
+  <p><i>As an exchange student and a traveller from Sweden I frequently find myself in conversations where my 
+  counterpart uses idiomatic expressions in order to make a point. These situations were what made me come up 
+  with the idea of creating a site where the user easily could search for, and learn, new idomatic expression. 
+  The purpose is to contribute to a deeper level understanding of the language. Happy learning!</i></p><br>
+  <p>- Tomas <br>Creator of Idioma</p>
+  <span class="glyphicon glyphicon-globe logo"></span>
+</div>
+
+<div id="contact" class="container-fluid bg-teal text-center">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+      <p>Contact us and we'll (probably not, on second thought we actually won't) get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Kransbindarvägen 41, Stockholm, Sweden</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 6-6-6</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> PleaseDontContact@idioma.com</p> 
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-arrow-up"></span>
+  </a>
+  <p>Back to top</p>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="js/scrolling.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+  <script type="text/javascript" src="js/alphList.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/register.js"></script>
+  <script type="text/javascript" src="js/favourites.js"></script>
+  <script type="text/javascript" src="js/addFavourite.js"></script>
+  <script type="text/javascript" src="js/addExpr.js"></script>
+  <script type="text/javascript" src="js/logout.js"></script>
+  <script type="text/javascript" src="js/session.js"></script> 
+</footer>
+
+
+</body>
+</html>
